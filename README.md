@@ -109,6 +109,7 @@ Bot: Our restaurant serves a dazzling 24-hour menu.
 
 **************************************************
 
-To train RASA model : rasa train
+To train RASA model : rasa train 
 To run our bot and start talking with it : rasa shell (on console)
 To run rasa on server : rasa run
+Test bot : rasa test
