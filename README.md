@@ -1,7 +1,7 @@
-# HOTEL-BOT
+# HOTEL-BOT-RASA
 
 
-To build a simple chatbot for a hotel. The chatbot should be able to the following basic functionalities
+To build a  chatbot for a hotel. The chatbot should be able to the following basic functionalities
 
     Book room
     Request Room Cleaning
