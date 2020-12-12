@@ -1,0 +1,111 @@
+actions:
+  - utter_greet
+  - utter_book1
+  - utter_confirm
+  - utter_type
+  - utter_now
+  - utter_after
+  - utter_clean
+  - utter_checkin
+  - utter_checkout
+  - utter_cancelr
+  - utter_cancelp
+  - utter_restaurant
+  - utter_breakfast
+  - utter_breakfasttime
+  - utter_resttime
+  - utter_goodbye
+  - utter_iamabot
+
+intents:
+  - greet
+  - book_room
+  - clean_room
+  - book_room2
+  - room_no
+  - clean_schedule
+  - clean_schedule2
+  - faq_check_in
+  - faq_check_out
+  - cancel_reservation
+  - cancellation_policy
+  - restaurant
+  - breakfast_avail
+  - breakfast_timings
+  - restaurant_timings
+  - goodbye
+  - affirm
+  - deny
+  - bot_challenge
+
+entities:
+  - no
+  - type
+
+slots:
+  no:
+    type: float
+  type:
+     type: text
+
+responses:
+  utter_greet:
+  - text: "Hey! How can i help you?"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa ."
+
+  utter_book1:
+  - text: " How many rooms would you like to book?."
+
+  utter_clean:
+  - text: "When should I arrange for a cleaning? "
+
+  utter_checkin:
+  - text: "Check-in time starts at 4 PM. Minimum check-in age is 21. Please contact the reception for early check-in requests. "
+
+  utter_checkout:
+  - text: "Check-out time is 11 AM. Please contact the reception for late checkout requests. "
+
+  utter_cancelr:
+  - text: "To cancel a reservation, select the “Reservations” link from the homepage. "
+  - text: "On the Reservations page, under the heading ‘View, Change or Cancel a Reservation,’ enter your confirmation number, and either the last name on the reservation or the last four digits of the credit card used to make the reservation. "
+
+  utter_cancelp:
+  - text: "The booking deposit is refundable if the cancellation occurs at least 15 days before arrival. For cancellations made after this limit, a penalty will be imposed based on the cancellation policy. "
+
+  utter_restaurant:
+  - text: " Yes, the hotel has a restaurant called the Zephyr Bar. With our menu we strive to reflect the historic art and the spirit of our neighborhood by offering a glimpse into what makes our area unique. "
+
+  utter_breakfast:
+  - text: "The hotel provides its guests with a free made-to-order breakfast each morning. "
+
+  utter_breakfasttime:
+  - text:  " Monday through Friday breakfast is 6 am to 9 am. On Saturday and Sunday, we are open from 7 am to 10:30 am. "
+
+  utter_resttime:
+  - text: " Our restaurant serves a dazzling 24-hour menu. "
+
+  utter_type:
+  - text: "What type of room would you want to book?"
+    buttons:
+    - title: "Simple"
+      payload: '/book_room{"type": "simple"}'
+    - title: "Delux"
+      payload: '/book_room{"type": "Delux"}'
+
+  utter_confirm:
+  - text: "You have chosen to book {no} {type} rooms"
+
+  utter_now:
+  - text: "Sure, I will send someone to your room right away."
+
+  utter_after:
+  - text: "Sure, I have scheduled a cleaning after {no} hours today."
+
+
+
+
