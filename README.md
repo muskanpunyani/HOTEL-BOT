@@ -1,13 +1,5 @@
 # HOTEL-BOT
 
-Welcome to the assignment! In this assignment, we will try to build a simple chatbot for a hotel. We will be using the Rasa framework for this assignment. Do not worry if you have no experience in ML or in using Rasa. All that is required for this assignment can be gleaned from the Rasa tutorial or Rasa docs.
-
-This assignment is intended to test your learning ability and problem-solving skills together with basic coding skills.
-
-Expected time: 4 days
-
-We hope that you have fun learning a new framework and building the chatbot!
-Objective -
 
 To build a simple chatbot for a hotel. The chatbot should be able to the following basic functionalities
 
@@ -21,19 +13,11 @@ Installation
 
 python 3.6.8 is recommended for use with Rasa!
 
-We highly recommend that you use a fresh virtual environment with python 3.6.8
-
-Rasa 2.0 is the only requirement for this project. Please follow the Rasa installation instructions listed at https://rasa.com/docs/rasa/user-guide/installation/
+Please follow the Rasa installation instructions listed at https://rasa.com/docs/rasa/user-guide/installation/
 Instructions
 
-We suggest that you use the Rasa framework to build this bot. Rasa is an open-source bot-building platform that will enable you to easily implement the functionalities required for this project.
+I suggest that you use the Rasa framework to build this bot. Rasa is an open-source bot-building platform that will enable you to easily implement the functionalities required for this project.
 
-You can check out this simple Rasa tutorial to get an idea of how to approach the problem.
-
-Please go through the Rasa 2.0 docs to familiarize yourself with how to use the different aspects of Rasa.
-Flows
-
-Please note that the flows below are only meant as examples to demonstrate functionalities. We would expect the bot to also handle questions having the same meaning but posed in different ways.
 
 For eg. in our Book Room example, we have the user say "I want to book a room". In this case, the bot should also be able to direct the user to this flow if he says something along the lines of "I would like to book a room", "I want to book a room for my stay" etc.
 
